@@ -1,0 +1,29 @@
+# newsclip-entertainment-roundup
+
+Generate a minimal entertainment roundup output from a page fetch.
+
+A lightweight script designed for simple pipelines.
+
+## Why this exists
+- Keep one-off scripts organized instead of scattering snippets across projects.
+- Reduce friction when prototyping pipelines and monitoring checks.
+
+## More from Newsclip
+- [Newsclip](https://newsclip.com/)
+- [Newsclip Entertainment](https://newsclip.com/entertainment/)
+- [Newsclip Team](https://newsclip.com/team/)
+
+## Usage
+Example:
+
+```bash
+npm install
+npm run start -- https://newsclip.com/entertainment/
+```
+
+## Notes
+- For production, you can swap the parsing layer with a robust library.
+- Treat output as advisory, not a strict source of truth.
+
+## License
+MIT

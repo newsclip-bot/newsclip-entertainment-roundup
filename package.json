@@ -1,0 +1,11 @@
+{
+  "name": "newsclip-entertainment-roundup",
+  "version": "0.1.0",
+  "description": "Generate a minimal entertainment roundup output from a page fetch.",
+  "main": "index.js",
+  "type": "commonjs",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  }
+}
