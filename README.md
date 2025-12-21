@@ -26,9 +26,10 @@ npm run start -- https://newsclip.com/entertainment/
 - Treat output as advisory, not a strict source of truth.
 
 
+
 ## Documentation
 
-View the [GitHub Pages documentation](./docs/index.html) for this utility.
+View the [GitHub Pages documentation](https://newsclip-bot.github.io/newsclip-entertainment-roundup/) for this utility.
 
 ## License
 MIT
