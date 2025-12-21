@@ -25,6 +25,11 @@ npm run start -- https://newsclip.com/entertainment/
 - For production, you can swap the parsing layer with a robust library.
 - Treat output as advisory, not a strict source of truth.
 
+
+## Documentation
+
+View the [GitHub Pages documentation](./docs/index.html) for this utility.
+
 ## License
 MIT
 
