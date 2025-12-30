@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsclip Utility: Site Audit Article Check</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .back-link {
+            margin-bottom: 20px;
+        }
+        
+        .back-link a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+        
+        .category-section {
+            margin-bottom: 50px;
+        }
+        
+        .category-header {
+            font-size: 1.8rem;
+            color: #667eea;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+        }
+        
+        .article-row {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .article-row:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        }
+        
+        .article-content {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        .article-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .article-text {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        
+        .article-title {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+        
+        .article-title a {
+            color: #333;
+            text-decoration: none;
+        }
+        
+        .article-title a:hover {
+            color: #667eea;
+        }
+        
+        .article-excerpt {
+            color: #666;
+            margin-bottom: 12px;
+            flex-grow: 1;
+            font-size: 0.95rem;
+        }
+        
+        .article-hashtags {
+            color: #667eea;
+            font-size: 0.85rem;
+            margin-bottom: 12px;
+            word-wrap: break-word;
+            max-height: 60px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .article-date {
+            color: #999;
+            font-size: 0.85rem;
+            font-style: italic;
+        }
+        
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="back-link">
+            <a href="index.html">← Back to Home</a>
+        </div>
+        
+        <header>
+            <h1>Newsclip Utility: Site Audit Article Check</h1>
+            <p>Latest Articles Grouped by Category</p>
+            <p style="font-size: 0.9rem; margin-top: 10px;">Generated: December 29, 2025 at 07:29 PM</p>
+        </header>
+        
+        <section class="category-section">
+  <h2 class="category-header">General</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://assets.newsweek.com/wp-content/uploads/2025/12/AP21043665045210.jpg?w=1200&amp;crop=1" alt="Tragic Avalanche Claims Life of Mammoth Ski Patroller" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/tragic-avalanche-claims-life-of-mammoth-ski-patroller" title="Tragic Avalanche Claims Life of Mammoth Ski Patroller">Tragic Avalanche Claims Life of Mammoth Ski Patroller</a></h3>
+          <p class="article-excerpt">Cole Murphy, a dedicated 30-year-old ski patroller at Mammoth Mountain, tragically lost his life following an avalanche incident during safety operations. A reminder of the inherent dangers in the Alaskan winter, his pa…</p>
+          <div class="article-hashtags">#SkiSafety #AvalancheAwareness #MammothMountain #Community #WinterSports</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static01.nyt.com/images/2025/12/29/world/29int-ukraine-analysis-00001/29int-ukraine-analysis-00001-facebookJumbo.jpg" alt="Zelensky&#039;s Strategic Gains: Keeping Trump on the Peace Agenda" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/zelenskys-strategic-gains-keeping-trump-on-the-peace-agenda" title="Zelensky&#039;s Strategic Gains: Keeping Trump on the Peace Agenda">Zelensky&#039;s Strategic Gains: Keeping Trump on the Peace Agenda</a></h3>
+          <p class="article-excerpt">In a landscape fraught with uncertainty, President Zelensky of Ukraine emerges with a cautious victory. By simply keeping the dialogue flowing with Trump, he ensures Ukraine&#039;s concerns remain at the forefront, even as c…</p>
+          <div class="article-hashtags">#Ukraine #PeaceTalks #Trump #Zelensky #InternationalRelations</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static.foxnews.com/foxnews.com/content/uploads/2025/12/new-jersey-helicopter-midair-collision-hammonton-001.jpg" alt="Tragedy in the Skies: New Jersey Helicopter Collision Raises Safety Concerns" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/tragedy-in-the-skies-new-jersey-helicopter-collision-raises-safety-concerns" title="Tragedy in the Skies: New Jersey Helicopter Collision Raises Safety Concerns">Tragedy in the Skies: New Jersey Helicopter Collision Raises Safety Concerns</a></h3>
+          <p class="article-excerpt">A mid-air collision of two helicopters in Hammonton, New Jersey, has tragically claimed one life and left another person fighting for survival. As investigations are underway, this incident raises pressing questions abo…</p>
+          <div class="article-hashtags">#AviationSafety #HelicopterCrash #NewJerseyNews #EmergencyResponse #PublicSafety</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-55512.jpg" alt="Courage Under Fire: The Bondi Beach Shooting Hero&#039;s Perspective" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/courage-under-fire-the-bondi-beach-shooting-heros-perspective" title="Courage Under Fire: The Bondi Beach Shooting Hero&#039;s Perspective">Courage Under Fire: The Bondi Beach Shooting Hero&#039;s Perspective</a></h3>
+          <p class="article-excerpt">In a harrowing moment at Bondi Beach, one man chose bravery over fear, wrestling a gun from an assailant to save innocent lives. Discover his story of quick thinking and selflessness amidst chaos.</p>
+          <div class="article-hashtags">#BondiBeach #HeroicActions #CommunitySafety #PublicSafety #AntiViolence</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-55767.jpg" alt="U.S. Extends 15-Year Security Guarantee to Ukraine Amid Ongoing Conflict" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/us-extends-15-year-security-guarantee-to-ukraine-amid-ongoing-conflict" title="U.S. Extends 15-Year Security Guarantee to Ukraine Amid Ongoing Conflict">U.S. Extends 15-Year Security Guarantee to Ukraine Amid Ongoing Conflict</a></h3>
+          <p class="article-excerpt">As tensions continue to rise in Eastern Europe, President Zelenskyy announces a new 15-year U.S. security guarantee for Ukraine. This development raises questions about the long-term implications for both nations and re…</p>
+          <div class="article-hashtags">#UkraineCrisis #USSupport #Zelenskyy #InternationalRelations #SecurityGuarantee</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="category-section">
+  <h2 class="category-header">Editorial</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-55860.jpg" alt="Cherokee Phoenix Editorial Board&#039;s Upcoming Zoom Meeting: A Moment to Engage" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/cherokee-phoenix-editorial-boards-upcoming-zoom-meeting-a-moment-to-engage" title="Cherokee Phoenix Editorial Board&#039;s Upcoming Zoom Meeting: A Moment to Engage">Cherokee Phoenix Editorial Board&#039;s Upcoming Zoom Meeting: A Moment to Engage</a></h3>
+          <p class="article-excerpt">The Cherokee Phoenix Editorial Board will convene virtually on January 9, 2026. This meeting offers a critical opportunity for community voices to shape our discourse and future. Let&#039;s explore what this means for us all.</p>
+          <div class="article-hashtags">#CherokeePhoenix #CommunityEngagement #EditorialBoard #VoicesMatter</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-55572.jpg" alt="Why Toledo&#039;s Solar Decision Sets a Precedent" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/why-toledos-solar-decision-sets-a-precedent" title="Why Toledo&#039;s Solar Decision Sets a Precedent">Why Toledo&#039;s Solar Decision Sets a Precedent</a></h3>
+          <p class="article-excerpt">Toledo&#039;s recent solar energy decision isn&#039;t just a local issue—it&#039;s a bellwether for broader energy reforms across the nation. Join me as I dissect the implications for civic accountability and the potential ripple effe…</p>
+          <div class="article-hashtags">#SolarEnergy #Toledo #Sustainability #CivicAccountability #ClimateJustice</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-55856.jpg" alt="Unveiling the Motives Behind Trump&#039;s Venezuela Stance" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/unveiling-the-motives-behind-trumps-venezuela-stance" title="Unveiling the Motives Behind Trump&#039;s Venezuela Stance">Unveiling the Motives Behind Trump&#039;s Venezuela Stance</a></h3>
+          <p class="article-excerpt">As tensions simmer in Venezuela, it&#039;s crucial to peel back the layers behind Trump&#039;s motives for war. This isn&#039;t just political theater; it&#039;s a matter of justice and civic accountability that impacts all of us.</p>
+          <div class="article-hashtags">#Venezuela #USForeignPolicy #JusticeReform #Accountability #HumanRights</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-55316.jpg" alt="Saying Goodbye: Reflecting on a Year of Division" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/saying-goodbye-reflecting-on-a-year-of-division" title="Saying Goodbye: Reflecting on a Year of Division">Saying Goodbye: Reflecting on a Year of Division</a></h3>
+          <p class="article-excerpt">As we close the chapter on a year fraught with polarizing moments, it&#039;s time to reflect on what lessons we&#039;ve learned. Join me in unpacking the complexities that shaped our discourse and consider how we can mend the div…</p>
+          <div class="article-hashtags">#YearInReview #CivicEngagement #SocialDiscourse #Unity #CivicDialogue</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-55323.jpg" alt="Inaction on Health Insurance: A Dire Threat to Our Well-Being" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/inaction-on-health-insurance-a-dire-threat-to-our-well-being" title="Inaction on Health Insurance: A Dire Threat to Our Well-Being">Inaction on Health Insurance: A Dire Threat to Our Well-Being</a></h3>
+          <p class="article-excerpt">The chilling reality of health insurance inaction is leaving countless individuals without the coverage they desperately need. As we delve into this pressing issue, it&#039;s time to challenge the status quo and spark real c…</p>
+          <div class="article-hashtags">#HealthCareReform #InsuranceInaction #UniversalHealthcare #PublicHealth #HealthEquity</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="category-section">
+  <h2 class="category-header">Sports</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/beb8/live/2beb48b0-e428-11f0-b67b-690eb873de1b.jpg" alt="Calvert-Lewin&#039;s Resurgence: Will He Make the England Squad for the World Cup?" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/calvert-lewins-resurgence-will-he-make-the-england-squad-for-the-world-cup" title="Calvert-Lewin&#039;s Resurgence: Will He Make the England Squad for the World Cup?">Calvert-Lewin&#039;s Resurgence: Will He Make the England Squad for the World Cup?</a></h3>
+          <p class="article-excerpt">Dominic Calvert-Lewin, the Premier League&#039;s leading English scorer, is making waves. As he fights to reclaim his spot in the national squad five years after his last cap, can he secure a place for the World Cup?</p>
+          <div class="article-hashtags">#CalvertLewin #PremierLeague #EnglandSquad #WorldCup2026 #Football</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://assets.newsweek.com/wp-content/uploads/2025/12/GettyImages-2251407338_96b960.jpg?w=1200&amp;crop=1" alt="Chiefs to Hit Reset? The Implications of a Potential Kelce Retirement" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/chiefs-to-hit-reset-the-implications-of-a-potential-kelce-retirement" title="Chiefs to Hit Reset? The Implications of a Potential Kelce Retirement">Chiefs to Hit Reset? The Implications of a Potential Kelce Retirement</a></h3>
+          <p class="article-excerpt">With rumors swirling about Travis Kelce&#039;s potential retirement, there&#039;s speculation on drastic changes ahead for the Kansas City Chiefs. What bold moves might the team consider for their future? Let&#039;s dive into what thi…</p>
+          <div class="article-hashtags">#TravisKelce #Chiefs #NFL #SportsAnalysis #FootballStrategy</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static.foxnews.com/foxnews.com/content/uploads/2025/12/tennis-battle-of-the-sexes-122925-1.jpg" alt="Kyrgios vs. Sabalenka: A Modern &#039;Battle of the Sexes&#039; Falls Flat" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/kyrgios-vs-sabalenka-a-modern-battle-of-the-sexes-falls-flat" title="Kyrgios vs. Sabalenka: A Modern &#039;Battle of the Sexes&#039; Falls Flat">Kyrgios vs. Sabalenka: A Modern &#039;Battle of the Sexes&#039; Falls Flat</a></h3>
+          <p class="article-excerpt">In a match inspired by tennis history, Nick Kyrgios faced Aryna Sabalenka in Dubai, yet the event left fans wanting more. Dive into the nuanced reactions and the implications behind this modern take on the classic showd…</p>
+          <div class="article-hashtags">#Tennis #BattleoftheSexes #MixedGenderSports #SportsNews #KyrgiosVsSabalenka</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2025%2F1118%2Fr1577103_1296x729_16%2D9.jpg" alt="Anthony Joshua Involved in Tragic Car Accident in Nigeria" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/anthony-joshua-involved-in-tragic-car-accident-in-nigeria" title="Anthony Joshua Involved in Tragic Car Accident in Nigeria">Anthony Joshua Involved in Tragic Car Accident in Nigeria</a></h3>
+          <p class="article-excerpt">In a heartbreaking turn of events, Anthony Joshua was involved in a serious car accident in Nigeria, resulting in the tragic loss of two lives. Thankfully, he sustained only minor injuries and is receiving medical care.</p>
+          <div class="article-hashtags">#AnthonyJoshua #Boxing #SportsNews #CarAccident #Nigeria</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://ichef.bbci.co.uk/news/1024/branded_news/56b3/live/16118280-e4c2-11f0-aae2-2191c0e48a3b.png" alt="Anthony Joshua: Injured but Resilient After Fatal Crash in Nigeria" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/anthony-joshua-injured-but-resilient-after-fatal-crash-in-nigeria" title="Anthony Joshua: Injured but Resilient After Fatal Crash in Nigeria">Anthony Joshua: Injured but Resilient After Fatal Crash in Nigeria</a></h3>
+          <p class="article-excerpt">British heavyweight boxer Anthony Joshua was injured in a car accident in Nigeria that tragically claimed two lives. As he recovers, the focus shifts to road safety and his significant ties to the local community.</p>
+          <div class="article-hashtags">#AnthonyJoshua #RoadSafety #BoxingNews #Nigeria #SportsJournalism</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="category-section">
+  <h2 class="category-header">Entertainment</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-55686.jpg" alt="Cindy Beasley: Trailblazer Leading Creative Cypher into a New Era" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/cindy-beasley-trailblazer-leading-creative-cypher-into-a-new-era" title="Cindy Beasley: Trailblazer Leading Creative Cypher into a New Era">Cindy Beasley: Trailblazer Leading Creative Cypher into a New Era</a></h3>
+          <p class="article-excerpt">In a groundbreaking move, Creative Cypher has appointed Cindy Beasley as its first female president, marking a significant step forward in the entertainment powerhouse&#039;s journey. I delve into what this means for the ind…</p>
+          <div class="article-hashtags">#CindyBeasley #CreativeCypher #WomenInLeadership #EntertainmentIndustry #DiversityInMedia</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://assets1.cbsnewsstatic.com/hub/i/r/2025/12/29/1480fc71-4836-49c7-9bff-e11f9c36bd11/thumbnail/1200x630/b4fe6f0c2bd39ea6922b40b9239ff2d4/cbsn-fusion-brigitte-bardot-dies-at-91-thumbnail.jpg" alt="Remembering Brigitte Bardot: A Cultural Icon at 91" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/remembering-brigitte-bardot-a-cultural-icon-at-91" title="Remembering Brigitte Bardot: A Cultural Icon at 91">Remembering Brigitte Bardot: A Cultural Icon at 91</a></h3>
+          <p class="article-excerpt">Brigitte Bardot, the legendary actress and style icon, has passed away at 91. In this reflection, I explore her unprecedented impact on cinema and fashion, highlighting moments that encapsulated her irrepressible spirit…</p>
+          <div class="article-hashtags">#BrigitteBardot #CulturalIcon #FashionHistory #Cinema #WomenEmpowerment</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-55442.jpg" alt="What to Expect in Live Square Entertainment This Sunday?" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/what-to-expect-in-live-square-entertainment-this-sunday" title="What to Expect in Live Square Entertainment This Sunday?">What to Expect in Live Square Entertainment This Sunday?</a></h3>
+          <p class="article-excerpt">As we step into another vibrant Sunday, Live Square Entertainment offers a thrilling lineup destined to captivate audiences. From performances to community gatherings, join me as I explore what this Sunday holds in stor…</p>
+          <div class="article-hashtags">#LiveSquareEntertainment #CommunityArts #SupportLocal #CulturalGatherings #Entertainment</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-55687.jpg" alt="Shifting Sands: Turmoil at Star Entertainment with New Executive Exits" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/shifting-sands-turmoil-at-star-entertainment-with-new-executive-exits" title="Shifting Sands: Turmoil at Star Entertainment with New Executive Exits">Shifting Sands: Turmoil at Star Entertainment with New Executive Exits</a></h3>
+          <p class="article-excerpt">Star Entertainment in Australia is navigating choppy waters as its CFO and COO abruptly exit, raising questions about the company&#039;s future. What does this mean for the entertainment giant and its stakeholders? Let&#039;s exp…</p>
+          <div class="article-hashtags">#StarEntertainment #ExecutiveDeparture #EntertainmentIndustry #LeadershipChange #CorporateBuzz</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static.foxnews.com/foxnews.com/content/uploads/2025/12/jennifer-aniston-beaming.jpg" alt="Jennifer Aniston&#039;s Joyful Holiday Moments with Jim Curtis" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/jennifer-anistons-joyful-holiday-moments-with-jim-curtis" title="Jennifer Aniston&#039;s Joyful Holiday Moments with Jim Curtis">Jennifer Aniston&#039;s Joyful Holiday Moments with Jim Curtis</a></h3>
+          <p class="article-excerpt">Celebrity fans got a rare glimpse into Jennifer Aniston&#039;s festive moments with boyfriend Jim Curtis as she shared enchanting Christmas photos on Instagram, celebrating their first holiday season together. Discover the m…</p>
+          <div class="article-hashtags">#JenniferAniston #JimCurtis #CelebrityCouples #HolidayJoy #InstagramMoment</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="category-section">
+  <h2 class="category-header">Business</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-56036.jpg" alt="German Businesses Brace for Unavoidable Job Cuts by 2026 Amid Ongoing Economic Struggles" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/german-businesses-brace-for-unavoidable-job-cuts-by-2026-amid-ongoing-economic-struggles" title="German Businesses Brace for Unavoidable Job Cuts by 2026 Amid Ongoing Economic Struggles">German Businesses Brace for Unavoidable Job Cuts by 2026 Amid Ongoing Economic Struggles</a></h3>
+          <p class="article-excerpt">As the economic crisis continues to loom over Germany, business leaders predict widespread job cuts in 2026. This sobering outlook highlights the human consequences of prolonged financial instability.</p>
+          <div class="article-hashtags">#GermanEconomy #JobCuts #BusinessForecast #EconomicCrisis #EmploymentImpact</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static01.nyt.com/images/2025/12/24/multimedia/00Youth-Sports-Mental-Health-wtjq/00Youth-Sports-Mental-Health-wtjq-facebookJumbo.jpg" alt="The Pressure of Play: Youth Sports and the Rise of Burnout" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/the-pressure-of-play-youth-sports-and-the-rise-of-burnout" title="The Pressure of Play: Youth Sports and the Rise of Burnout">The Pressure of Play: Youth Sports and the Rise of Burnout</a></h3>
+          <p class="article-excerpt">As youth sports evolve into competitive arenas, the emotional health of young athletes is increasingly at risk. Excessive pressure from parents and coaches is leading to burnout and injuries, prompting a critical examin…</p>
+          <div class="article-hashtags">#YouthSports #MentalHealth #ChildDevelopment #SportsBurnout #HealthyCompetition</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static01.nyt.com/images/2025/12/29/multimedia/00biz-rare-earth-processing-01-zmhp/00biz-rare-earth-processing-01-zmhp-facebookJumbo.jpg" alt="Emerging Rivals: U.S. Start-Up Aims to Dismantle China&#039;s Rare-Earth Domination" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/emerging-rivals-us-start-up-aims-to-dismantle-chinas-rare-earth-domination" title="Emerging Rivals: U.S. Start-Up Aims to Dismantle China&#039;s Rare-Earth Domination">Emerging Rivals: U.S. Start-Up Aims to Dismantle China&#039;s Rare-Earth Domination</a></h3>
+          <p class="article-excerpt">In New Hampshire, Phoenix Tailings is on a mission to challenge China&#039;s grip on the rare-earth market with innovative processing techniques. This could redefine global supply chains for vital materials used in everythin…</p>
+          <div class="article-hashtags">#RareEarths #PhoenixTailings #SustainableMining #ElectricVehicles #EconomicPolicy</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static.foxnews.com/foxnews.com/content/uploads/2025/12/chatgpt-photo-1.jpg" alt="Elevating ChatGPT: 5 Essential Apps That Transform Your Experience" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/elevating-chatgpt-5-essential-apps-that-transform-your-experience" title="Elevating ChatGPT: 5 Essential Apps That Transform Your Experience">Elevating ChatGPT: 5 Essential Apps That Transform Your Experience</a></h3>
+          <p class="article-excerpt">ChatGPT&#039;s evolution is redefining digital assistance. With powerful apps for music, design, travel, and dining, discover how to streamline your tasks like never before.</p>
+          <div class="article-hashtags">#ChatGPT #AIApplications #DigitalAssistant #TechTrends #Productivity #Innovation</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-55466.jpg" alt="Exploring the Future of Gig Work: Your Insights Matter" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/exploring-the-future-of-gig-work-your-insights-matter" title="Exploring the Future of Gig Work: Your Insights Matter">Exploring the Future of Gig Work: Your Insights Matter</a></h3>
+          <p class="article-excerpt">As the gig economy evolves, many are reconsidering their paths. I invite you to share your experiences and thoughts by participating in this survey, shaping the future of work together.</p>
+          <div class="article-hashtags">#GigEconomy #Freelance #WorkSurvey #FutureOfWork #LaborRights</div>
+          <time class="article-date">December 29, 2025</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+        
+        <footer>
+            <p>Articles are sourced from <a href="https://newsclip.com/">Newsclip</a> and grouped by category for easier browsing.</p>
+            <p style="margin-top: 10px;">Visit <a href="https://newsclip.com/general/">General</a>, <a href="https://newsclip.com/business/">Business</a>, <a href="https://newsclip.com/sports/">Sports</a>, <a href="https://newsclip.com/entertainment/">Entertainment</a>, and <a href="https://newsclip.com/editorial/">Editorial</a> sections.</p>
+        </footer>
+    </div>
+</body>
+</html>
