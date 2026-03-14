@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsclip Utility: Site Audit Article Check</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+        
+        .back-link {
+            margin-bottom: 20px;
+        }
+        
+        .back-link a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+        
+        .category-section {
+            margin-bottom: 50px;
+        }
+        
+        .category-header {
+            font-size: 1.8rem;
+            color: #667eea;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+        
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+        }
+        
+        .article-row {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .article-row:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+        }
+        
+        .article-content {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        .article-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .article-text {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        
+        .article-title {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+        
+        .article-title a {
+            color: #333;
+            text-decoration: none;
+        }
+        
+        .article-title a:hover {
+            color: #667eea;
+        }
+        
+        .article-excerpt {
+            color: #666;
+            margin-bottom: 12px;
+            flex-grow: 1;
+            font-size: 0.95rem;
+        }
+        
+        .article-hashtags {
+            color: #667eea;
+            font-size: 0.85rem;
+            margin-bottom: 12px;
+            word-wrap: break-word;
+            max-height: 60px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .article-date {
+            color: #999;
+            font-size: 0.85rem;
+            font-style: italic;
+        }
+        
+        footer {
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            
+            .articles-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="back-link">
+            <a href="index.html">← Back to Home</a>
+        </div>
+        
+        <header>
+            <h1>Newsclip Utility: Site Audit Article Check</h1>
+            <p>Latest Articles Grouped by Category</p>
+            <p style="font-size: 0.9rem; margin-top: 10px;">Generated: March 14, 2026 at 06:00 PM</p>
+        </header>
+        
+        <section class="category-section">
+  <h2 class="category-header">General</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static.foxnews.com/foxnews.com/content/uploads/2025/07/passport-and-visa-travel-picture.jpg" alt="New Rule Cuts U.S. Citizenship Renunciation Fee by 80%: A Pivotal Shift" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/new-rule-cuts-us-citizenship-renunciation-fee-by-80-a-pivotal-shift" title="New Rule Cuts U.S. Citizenship Renunciation Fee by 80%: A Pivotal Shift">New Rule Cuts U.S. Citizenship Renunciation Fee by 80%: A Pivotal Shift</a></h3>
+          <p class="article-excerpt">The State Department&#039;s dramatic slashing of the citizenship renunciation fee from $2,350 to $450 holds significant implications for Americans abroad. This 80% reduction eases financial burdens, reflecting broader policy…</p>
+          <div class="article-hashtags">#Citizenship #ExpatLife #StateDepartment #ImmigrationPolicy #FinancialImpact</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://ichef.bbci.co.uk/news/1024/branded_news/c670/live/c49e5040-141e-11f1-963a-55716ece1b4d.jpg" alt="Alps Avalanche Deaths Surge: Weather Woes and Skiers&#039; Complacency" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/alps-avalanche-deaths-surge-weather-woes-and-skiers-complacency" title="Alps Avalanche Deaths Surge: Weather Woes and Skiers&#039; Complacency">Alps Avalanche Deaths Surge: Weather Woes and Skiers&#039; Complacency</a></h3>
+          <p class="article-excerpt">This season has witnessed over 100 ski-related fatalities in the French Alps, prompting urgent calls for better preparation and awareness among skiers. Join me as we explore the contributing factors driving this alarmin…</p>
+          <div class="article-hashtags">#AvalancheSafety #Alps #WinterSports #SkiingRisks #ClimateChange</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static.foxnews.com/foxnews.com/content/uploads/2026/03/hormus-strait-iran-vessels.jpg" alt="Iran&#039;s Deceptive Drone Warfare: A New Threat in the Strait of Hormuz" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/irans-deceptive-drone-warfare-a-new-threat-in-the-strait-of-hormuz" title="Iran&#039;s Deceptive Drone Warfare: A New Threat in the Strait of Hormuz">Iran&#039;s Deceptive Drone Warfare: A New Threat in the Strait of Hormuz</a></h3>
+          <p class="article-excerpt">Iran&#039;s latest tactic of deploying explosive-laden drone boats disguised as fishing vessels poses an alarming threat to global shipping. With escalating tensions and promises to keep the Strait of Hormuz closed, the ques…</p>
+          <div class="article-hashtags">#Iran #StraitOfHormuz #MaritimeSecurity #GlobalTrade #HybridWarfare</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-106640.jpg" alt="Iran War and Its Ripple Effect: The Coming Food Crisis" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/iran-war-and-its-ripple-effect-the-coming-food-crisis" title="Iran War and Its Ripple Effect: The Coming Food Crisis">Iran War and Its Ripple Effect: The Coming Food Crisis</a></h3>
+          <p class="article-excerpt">As tensions escalate with Iran, the repercussions on global food prices are becoming increasingly concerning. With critical shipping routes at risk, the looming threat of a food shock could have dire implications for ev…</p>
+          <div class="article-hashtags">#IranWar #FoodPrices #EconomicImpact #SupplyChain #CivicAwareness</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static.foxnews.com/foxnews.com/content/uploads/2026/03/wild-hornets-sting-interceptor-drones.jpg" alt="Assessing the Drone Threat: A New Era in Warfare" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/assessing-the-drone-threat-a-new-era-in-warfare" title="Assessing the Drone Threat: A New Era in Warfare">Assessing the Drone Threat: A New Era in Warfare</a></h3>
+          <p class="article-excerpt">As Iranian drone technology spreads, the U.S. faces pressing challenges to its air defense systems. Meanwhile, Ukraine offers innovative low-cost solutions that may redefine the battlefield dynamics.</p>
+          <div class="article-hashtags">#DroneWarfare #MilitaryTech #Iran #Ukraine #AirDefense #CostEffectiveSolutions</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="category-section">
+  <h2 class="category-header">Editorial</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://i.guim.co.uk/img/media/8815511a08e3b248a5eca4c28b3841e5f2cdb83f/95_0_3038_2431/master/3038.jpg?width=1200&amp;height=630&amp;quality=85&amp;auto=format&amp;fit=crop&amp;precrop=40:21,offset-x50,offset-y0&amp;overlay-align=bottom%2Cleft&amp;overlay-width=100p&amp;overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&amp;enable=upscale&amp;s=8c0fcdbe569551508440c0d3734e62c9" alt="Lessons Unlearned: Iran&#039;s Revolution and the Danger of Foreign Interference" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/lessons-unlearned-irans-revolution-and-the-danger-of-foreign-interference" title="Lessons Unlearned: Iran&#039;s Revolution and the Danger of Foreign Interference">Lessons Unlearned: Iran&#039;s Revolution and the Danger of Foreign Interference</a></h3>
+          <p class="article-excerpt">As the flames of protest engulf Iran once more, I reflect on my firsthand experience during the 1979 revolution. Foreign powers have historically misjudged this complex landscape, and the current crises are no exception…</p>
+          <div class="article-hashtags">#IranProtests #Revolution #ForeignPolicy #MiddleEast #HumanRights</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://i.guim.co.uk/img/media/b3243da4ef4ec5d8416a56c1e00ca2b398cbd250/635_0_4680_3744/master/4680.jpg?width=1200&amp;height=630&amp;quality=85&amp;auto=format&amp;fit=crop&amp;precrop=40:21,offset-x50,offset-y0&amp;overlay-align=bottom%2Cleft&amp;overlay-width=100p&amp;overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctb3BpbmlvbnMucG5n&amp;enable=upscale&amp;s=867123cb489b338582430d77038d6e39" alt="The Illusion of Justification: Scrutinizing the US-Iran War" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/the-illusion-of-justification-scrutinizing-the-us-iran-war" title="The Illusion of Justification: Scrutinizing the US-Iran War">The Illusion of Justification: Scrutinizing the US-Iran War</a></h3>
+          <p class="article-excerpt">Weeks into a new conflict, the catastrophic outcomes of the US-Iran war force us to confront not just the decisions made but the deeper implications of warfare without clear objectives. I dive into the chaos and consequ…</p>
+          <div class="article-hashtags">#USIranWar #MiddleEastConflict #MilitaryAccountability #WarConsequences #InvestigativeJournalism</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-107119.jpg" alt="Why Fargo&#039;s New Convention Center Belongs Downtown: A Vision for Vibrancy" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/why-fargos-new-convention-center-belongs-downtown-a-vision-for-vibrancy" title="Why Fargo&#039;s New Convention Center Belongs Downtown: A Vision for Vibrancy">Why Fargo&#039;s New Convention Center Belongs Downtown: A Vision for Vibrancy</a></h3>
+          <p class="article-excerpt">Fargo&#039;s new convention center has sparked a debate over its placement. Should it be part of our bustling downtown? I argue it must, for the sake of our community&#039;s future. Let&#039;s dive into the reasons that can shape not…</p>
+          <div class="article-hashtags">#FargoConventionCenter #UrbanDevelopment #CommunityEngagement #SustainableCities #EconomicGrowth</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-106755.jpg" alt="The Silence of Editorial Boards: Why Are They Hesitant to Demand Peace?" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/the-silence-of-editorial-boards-why-are-they-hesitant-to-demand-peace" title="The Silence of Editorial Boards: Why Are They Hesitant to Demand Peace?">The Silence of Editorial Boards: Why Are They Hesitant to Demand Peace?</a></h3>
+          <p class="article-excerpt">In a world marred by conflict, I ask: Why is it so hard for editorial boards to take a strong stance against war? This piece delves into the responsibility of the press and the urgent need for accountability in the medi…</p>
+          <div class="article-hashtags">#StopTheWar #MediaAccountability #PeaceAdvocacy #CivicResponsibility #InvestigativeJournalism</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-107105.jpg" alt="Unearthing the Truth: Examining Religious Education Hypocrisy in Texas" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/unearthing-the-truth-examining-religious-education-hypocrisy-in-texas" title="Unearthing the Truth: Examining Religious Education Hypocrisy in Texas">Unearthing the Truth: Examining Religious Education Hypocrisy in Texas</a></h3>
+          <p class="article-excerpt">In Texas, the glaring contradictions in religious education policy raise profound questions about civic responsibility and accountability. I delve into how these discrepancies impact our communities and what they reveal…</p>
+          <div class="article-hashtags">#EducationReform #ReligiousEducation #TexasPolitics #AcademicIntegrity #CivicAccountability</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="category-section">
+  <h2 class="category-header">Sports</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://ichef.bbci.co.uk/ace/standard/1024/cpsprodpb/0cab/live/9fe53070-1fc2-11f1-b048-c9424b2cf5fd.jpg" alt="Ireland&#039;s Thrilling Triumph: A Night to Remember Against Scotland" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/irelands-thrilling-triumph-a-night-to-remember-against-scotland" title="Ireland&#039;s Thrilling Triumph: A Night to Remember Against Scotland">Ireland&#039;s Thrilling Triumph: A Night to Remember Against Scotland</a></h3>
+          <p class="article-excerpt">In a gripping showdown that showcased sheer skill and determination, Ireland delivered a stunning 43-21 victory over Scotland, securing the Triple Crown and reigniting their ambitions for the Six Nations title this Supe…</p>
+          <div class="article-hashtags">#RugbyUnion #SixNations #Ireland #Scotland #TripleCrown</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://s.yimg.com/ny/api/res/1.2/Fta5qi8FyaHm3yUawHGdOQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTYzOTtjZj13ZWJw/https://media.zenfs.com/en/motorsport_articles_445/34c496469bcf7b7ae725ae758cdf4d7b" alt="Leclerc&#039;s Near Miss: Safety Car Drama Foils Sprint Win" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/leclercs-near-miss-safety-car-drama-foils-sprint-win" title="Leclerc&#039;s Near Miss: Safety Car Drama Foils Sprint Win">Leclerc&#039;s Near Miss: Safety Car Drama Foils Sprint Win</a></h3>
+          <p class="article-excerpt">In a thrilling yet tense finish, Charles Leclerc&#039;s second-place at the F1 Chinese GP sprint was marred by a &#039;very scary moment&#039; that robbed him of a final push against George Russell. What happened on that lap 17 restar…</p>
+          <div class="article-hashtags">#F1 #CharlesLeclerc #GeorgeRussell #ChineseGP #Motorsport</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://s.yimg.com/ny/api/res/1.2/iorEJ6UYsfp11qe3Rk5SOQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTY0MDtjZj13ZWJw/https://media.zenfs.com/en/sb_nation_articles_115/7a208d9f468fea9a78a8d21940bf47e0" alt="Bissetta&#039;s Grand Slam Powers Ole Miss Past Texas in SEC Opener" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/bissettas-grand-slam-powers-ole-miss-past-texas-in-sec-opener" title="Bissetta&#039;s Grand Slam Powers Ole Miss Past Texas in SEC Opener">Bissetta&#039;s Grand Slam Powers Ole Miss Past Texas in SEC Opener</a></h3>
+          <p class="article-excerpt">In a thrilling SEC opener, Tristan Bissetta&#039;s grand slam lifted Ole Miss over No. 2 Texas, creating a moment that will echo through college baseball history. Dive into the game that shook the Longhorns&#039; dominance.</p>
+          <div class="article-hashtags">#CollegeBaseball #OleMiss #SECSports #BaseballHighlights #TristanBissetta</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/185f/live/a87bcf40-1f5a-11f1-a41b-69bb539ec608.jpg" alt="Russell Triumphs in Thrilling Chinese GP Sprint Showdown" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/russell-triumphs-in-thrilling-chinese-gp-sprint-showdown" title="Russell Triumphs in Thrilling Chinese GP Sprint Showdown">Russell Triumphs in Thrilling Chinese GP Sprint Showdown</a></h3>
+          <p class="article-excerpt">In an exhilarating sprint race at the Chinese Grand Prix, George Russell showcased his skill, overcoming fierce competition from teammate Lewis Hamilton and others. The wheel-to-wheel battles will leave fans buzzing.</p>
+          <div class="article-hashtags">#Formula1 #ChineseGP #GeorgeRussell #Mercedes #Motorsport #RacingHighlights</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://s.yimg.com/os/en/the_big_lead_articles_114/179a24e8899cf3d5e2cb51d23d8df0d4" alt="Drama Unfolds: Cal Raleigh&#039;s Teammate Shares Insight After WBC Tension" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/drama-unfolds-cal-raleighs-teammate-shares-insight-after-wbc-tension" title="Drama Unfolds: Cal Raleigh&#039;s Teammate Shares Insight After WBC Tension">Drama Unfolds: Cal Raleigh&#039;s Teammate Shares Insight After WBC Tension</a></h3>
+          <p class="article-excerpt">In a thrilling WBC quarterfinal, Team USA triumphed over Canada 5-3, but it wasn&#039;t just the score that had fans buzzing. The unexpected snub between Mariners&#039; Cal Raleigh and Josh Naylor stole the spotlight, revealing d…</p>
+          <div class="article-hashtags">#WorldBaseballClassic #TeamUSA #CalRaleigh #JoshNaylor #SportsDrama</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="category-section">
+  <h2 class="category-header">Entertainment</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static.foxnews.com/foxnews.com/content/uploads/2026/03/willie-korie-duck-dynasty-the-revival-s2.jpg" alt="Willie Robertson&#039;s Preppy Phase: A Dive into Duck Dynasty&#039;s Fun Side" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/willie-robertsons-preppy-phase-a-dive-into-duck-dynastys-fun-side" title="Willie Robertson&#039;s Preppy Phase: A Dive into Duck Dynasty&#039;s Fun Side">Willie Robertson&#039;s Preppy Phase: A Dive into Duck Dynasty&#039;s Fun Side</a></h3>
+          <p class="article-excerpt">In a surprising revelation, Korie Robertson shares that her husband, Willie, had a &#039;rebellious&#039; clean-shaven phase during his 20s, trading camouflage for polos and Girbaud jeans. This playful glimpse into his past revea…</p>
+          <div class="article-hashtags">#DuckDynasty #WillieRobertson #KorieRobertson #Entertainment #RealityTV</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-106892.jpg" alt="A New Stage in Downtown Roanoke: The Magic of &#039;Buddies&#039;" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/a-new-stage-in-downtown-roanoke-the-magic-of-buddies" title="A New Stage in Downtown Roanoke: The Magic of &#039;Buddies&#039;">A New Stage in Downtown Roanoke: The Magic of &#039;Buddies&#039;</a></h3>
+          <p class="article-excerpt">&#039;Buddies&#039; has opened its doors in Downtown Roanoke, infusing local culture with vibrant theatrical energy. This play not only entertains but also resonates with the community&#039;s spirit, promising an unforgettable experie…</p>
+          <div class="article-hashtags">#RoanokeArts #Theater #CulturalEvents #Buddies #CommunityTheater</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://static.foxnews.com/foxnews.com/content/uploads/2026/03/gina-gershon-paul-snider-dorothy-stratten-split-photo.jpg" alt="Gina Gershon Reflects on a &#039;Creepy&#039; Encounter with a Future Killer" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/gina-gershon-reflects-on-a-creepy-encounter-with-a-future-killer" title="Gina Gershon Reflects on a &#039;Creepy&#039; Encounter with a Future Killer">Gina Gershon Reflects on a &#039;Creepy&#039; Encounter with a Future Killer</a></h3>
+          <p class="article-excerpt">In her new memoir, Gina Gershon recounts a disturbing meeting with Paul Snider, the man who later murdered Playboy Playmate Dorothy Stratten. This chilling encounter—just weeks before Stratten&#039;s tragic death—offers a ha…</p>
+          <div class="article-hashtags">#GinaGershon #DorothyStratten #Hollywood #TrueCrime #Memoir</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://assets.newsweek.com/wp-content/uploads/2026/03/BJ-Minor-in-Scared-to-Death.jpg?w=1200" alt="B.J. Minor: From Teenage Icon to Horror Comedy Star" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/bj-minor-from-teenage-icon-to-horror-comedy-star" title="B.J. Minor: From Teenage Icon to Horror Comedy Star">B.J. Minor: From Teenage Icon to Horror Comedy Star</a></h3>
+          <p class="article-excerpt">In my latest conversation with rising star B.J. Minor, we explore his journey from embodying a young Mike Tyson to starring in the playful horror comedy &#039;Scared to Death.&#039; Join me as we dive into stardom, style, and the…</p>
+          <div class="article-hashtags">#BJMinor #ScaredToDeath #HorrorComedy #Entertainment #Film #Acting</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-107223.jpg" alt="Inside the Scandal: Rebel Wilson&#039;s PR Team and the Dark Side of Hollywood" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/inside-the-scandal-rebel-wilsons-pr-team-and-the-dark-side-of-hollywood" title="Inside the Scandal: Rebel Wilson&#039;s PR Team and the Dark Side of Hollywood">Inside the Scandal: Rebel Wilson&#039;s PR Team and the Dark Side of Hollywood</a></h3>
+          <p class="article-excerpt">Leaked audio seems to unveil a shocking plot by Rebel Wilson&#039;s PR team to undermine a producer of her latest film, raising eyebrows about the ethics in celebrity publicity tactics. Could this be the tip of a much deeper…</p>
+          <div class="article-hashtags">#RebelWilson #HollywoodScandal #PREthics #EntertainmentNews #CelebrityCulture</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+<section class="category-section">
+  <h2 class="category-header">Business</h2>
+  <div class="articles-grid">
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://ichef.bbci.co.uk/news/1024/branded_news/bc9a/live/87c0d0f0-1f3e-11f1-9120-a910fc22c6ac.jpg" alt="Chancellor Reeves Takes Action Against Soaring Heating Oil Costs" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/chancellor-reeves-takes-action-against-soaring-heating-oil-costs" title="Chancellor Reeves Takes Action Against Soaring Heating Oil Costs">Chancellor Reeves Takes Action Against Soaring Heating Oil Costs</a></h3>
+          <p class="article-excerpt">As heating oil prices rise dramatically due to geopolitical tensions, Chancellor Rachel Reeves pledges support for struggling households. With options in the works, the government is poised to assist the most vulnerable…</p>
+          <div class="article-hashtags">#HeatingOil #CostOfLiving #EnergyCrisis #ChancellorReeves #UKEconomy</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://ichef.bbci.co.uk/news/480/cpsprodpb/a74a/live/b04505d0-1bda-11f1-801a-8f2f63e21096.jpg" alt="Urgent Support Needed for Northern Ireland&#039;s Heating Oil Crisis" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/urgent-support-needed-for-northern-irelands-heating-oil-crisis" title="Urgent Support Needed for Northern Ireland&#039;s Heating Oil Crisis">Urgent Support Needed for Northern Ireland&#039;s Heating Oil Crisis</a></h3>
+          <p class="article-excerpt">Amid soaring heating oil prices, Rachel Reeves is promising relief for struggling households in Northern Ireland. With two-thirds relying on oil for heat, the urgency for aid is palpable as families grapple with escalat…</p>
+          <div class="article-hashtags">#HeatingCrisis #NorthernIreland #CostOfLiving #EnergyBills #RachelReeves</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-106926.jpg" alt="GSK and Amgen Boost TrumpRx with New Medicines" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/gsk-and-amgen-boost-trumprx-with-new-medicines" title="GSK and Amgen Boost TrumpRx with New Medicines">GSK and Amgen Boost TrumpRx with New Medicines</a></h3>
+          <p class="article-excerpt">In a significant move for healthcare access, GSK and Amgen are set to expand their offerings under the TrumpRx program. This change promises a broader range of medications for patients, reinforcing the ongoing conversat…</p>
+          <div class="article-hashtags">#HealthcareAccess #Pharmaceuticals #DrugPricing #GSK #Amgen</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-106924.jpg" alt="Mavs Business Assist Fuels Local Startups with $40K Pitch Competition Boost" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/mavs-business-assist-fuels-local-startups-with-40k-pitch-competition-boost" title="Mavs Business Assist Fuels Local Startups with $40K Pitch Competition Boost">Mavs Business Assist Fuels Local Startups with $40K Pitch Competition Boost</a></h3>
+          <p class="article-excerpt">The Mavs Business Assist recently awarded $40,000 to budding local entrepreneurs during an exciting pitch competition, showcasing the intersection of sports, community, and innovation. This initiative is more than just…</p>
+          <div class="article-hashtags">#Entrepreneurship #MavsBusinessAssist #PitchCompetition #LocalBusiness #CommunitySupport</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+    <article class="article-row">
+      <div class="article-content">
+        <img src="https://newsclip.com/images/articles/newsclip-article-107257.jpg" alt="Marquette Business Expands Horizons with New Real Estate Minor for Non-Business Students" class="article-image" />
+        <div class="article-text">
+          <h3 class="article-title"><a href="https://newsclip.com/article/marquette-business-expands-horizons-with-new-real-estate-minor-for-non-business-students" title="Marquette Business Expands Horizons with New Real Estate Minor for Non-Business Students">Marquette Business Expands Horizons with New Real Estate Minor for Non-Business Students</a></h3>
+          <p class="article-excerpt">Marquette Business is breaking new ground by introducing a real estate minor designed specifically for non-business students, bridging gaps and offering vital skills. This program aims to enrich educational pathways and…</p>
+          <div class="article-hashtags">#RealEstateEducation #HigherEd #MarketTrends #MarquetteUniversity #EconomicImpact</div>
+          <time class="article-date">March 14, 2026</time>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+        
+        <footer>
+            <p>Articles are sourced from <a href="https://newsclip.com/">Newsclip</a> and grouped by category for easier browsing.</p>
+            <p style="margin-top: 10px;">Visit <a href="https://newsclip.com/general/">General</a>, <a href="https://newsclip.com/business/">Business</a>, <a href="https://newsclip.com/sports/">Sports</a>, <a href="https://newsclip.com/entertainment/">Entertainment</a>, and <a href="https://newsclip.com/editorial/">Editorial</a> sections.</p>
+        </footer>
+    </div>
+</body>
+</html>
